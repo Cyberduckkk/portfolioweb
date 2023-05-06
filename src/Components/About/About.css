@@ -1,0 +1,116 @@
+#about{
+    padding-top: 15rem ;
+    padding-bottom: 10rem ;
+}
+.about-main .row{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+.about-main .row .col{
+    width: 50%;
+}
+.about-main .row .about-img{
+    width: 20rem;
+    animation: ImageAnimation infinite 2s;
+    pointer-events: none;
+}
+.about-main .container{
+    text-align: center;
+}
+@keyframes ImageAnimation{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.about-main .row .about-text{
+    text-align: left;
+    margin-top: 6rem;
+}
+.about-main .row .about-text p{
+    font-size: 0.9rem;
+    color: var(--text-200);
+}
+.social-media-box{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-box li{
+    color: #000;
+    font-size: 30px;
+    padding: 8px;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    transition: all ease-in-out 0.4s;
+}
+.social-media-box li:hover{
+    border: 1px solid #000;
+    color: var(--bg-200);
+    background-color: #000;
+}
+
+@media screen and (max-width:991px){
+    .container{
+      width: 75%;
+    }
+    .about-main .row .about-img{
+        width: 15rem;
+    }
+    .about-main .row{
+        align-items: center;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+      width: 85%;
+    }
+    .about-main .row{
+        display: grid;
+        width: 100% !important;
+    }
+    .about-main .row .col{
+        width: 100% !important;
+        margin: auto;
+    }
+    .about-main .about-text{
+        text-align: center !important;
+        margin-top: -1rem !important;
+    }
+    .about-main .about-img{
+        width: 17rem !important;
+    }
+    .about-main .about-img-box {
+        text-align: center;
+    }
+  }
+@media screen and (max-width:320px){
+    .about-main .row .about-text p{
+        font-size: 0.8rem;
+        width: 80%;
+        margin: auto;
+    }
+    .about-main .about-img{
+        width: 14rem !important;
+    }
+}
+@media screen and (max-width:350px){
+    .social-media-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 50px 0;
+    }
+    .social-media-box li{
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}

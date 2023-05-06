@@ -1,0 +1,10 @@
+{
+    "editor.codeLensFontFamily": "'Poppins', sans-serif",
+    "editor.inlayHints.fontFamily": "'Poppins', sans-serif",
+    "scm.inputFontFamily": "'Poppins', sans-serif",
+    "debug.console.fontFamily": "'Poppins', sans-serif",
+    "markdown.preview.fontFamily": "'Poppins', sans-serif",
+    "notebook.output.fontFamily": "'Poppins', sans-serif",
+    "terminal.integrated.fontFamily": "'Poppins', sans-serif",
+    "interactiveSession.editor.fontFamily": "'Poppins', sans-serif"
+}

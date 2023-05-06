@@ -1,0 +1,24 @@
+.scrolltop{
+    position: fixed;
+    right: 2.5rem;
+    bottom: -20%;
+    background-color:  var(--bg-200);
+    border: 1px solid var(--primary-200);
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    z-index: 99;
+    transition: .4s;
+    color: var(--text-200);
+}
+
+.scrolltop-icon{
+    font-size: 1.5rem;
+}
+.scrolltop:hover{
+    color: var(--bg-200);
+    background-color: var(--accent-200);
+}
+.show-scroll{
+    bottom: 3rem;
+}
